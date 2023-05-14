@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.flower{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flower-petals .petal:nth-child(1){
+    background-color: mediumorchid;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(302deg);
+    position: relative;
+    z-index: -2;
+    top: 110px;
+}
+.flower-petals .petal:nth-child(2){
+    background-color: orchid;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(346deg);
+    position: relative;
+    z-index: -2;
+    /* transform: translate(39px, 100px); */
+    top: 97px;
+    left: 39px;
+}
+.flower-petals .petal:nth-child(3){
+    background-color: plum;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(248deg);
+    position: relative;
+    z-index: -2;
+    top: 68px;
+    right: 39px;
+}
+.flower-petals .petal:nth-child(4){
+    background-color: violet;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(30deg);
+    position: relative;
+    z-index: -2;
+    top: 72px;
+    left: 52px;
+}
+.flower-petals .petal:nth-child(5){
+    background-color: mediumorchid;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(183deg);
+    position: relative;
+    z-index: -2;
+    top: 51px;
+    right: 45px;
+}
+.flower-petals .petal:nth-child(6){
+    background-color: plum;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(93deg);
+    position: relative;
+    z-index: -2;
+    top: 47px;
+    left: 28px;
+}
+.flower-petals .petal:nth-child(7){
+    background-color: mediumorchid;
+    height: 30px;
+    border-radius: 31px 1px 29px 1px;
+    transform: rotate(333deg);
+    position: relative;
+    z-index: -2;
+    top: 22px;
+    right: 21px;
+}
+.flower-corolla {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -124%);
+    position: relative;
+}

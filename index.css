@@ -10,6 +10,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/*petal 1*/
 .flower-petals .petal:nth-child(1){
     background-color: mediumorchid;
     height: 30px;
@@ -18,7 +19,9 @@
     position: relative;
     z-index: -2;
     top: 110px;
+    animation: petal1 infinite ease-in-out 2000ms;
 }
+/*petal 2*/
 .flower-petals .petal:nth-child(2){
     background-color: orchid;
     height: 30px;
@@ -26,12 +29,13 @@
     transform: rotate(346deg);
     position: relative;
     z-index: -2;
-    /* transform: translate(39px, 100px); */
     top: 97px;
     left: 39px;
+    animation: petal2 infinite ease-in-out 3000ms;
 }
+/*petal 7*/
 .flower-petals .petal:nth-child(3){
-    background-color: plum;
+    background-color: violet;
     height: 30px;
     border-radius: 31px 1px 29px 1px;
     transform: rotate(248deg);
@@ -39,7 +43,9 @@
     z-index: -2;
     top: 68px;
     right: 39px;
+    animation: petal7 infinite ease-in-out 8000ms;
 }
+/*petal 3*/
 .flower-petals .petal:nth-child(4){
     background-color: violet;
     height: 30px;
@@ -49,9 +55,11 @@
     z-index: -2;
     top: 72px;
     left: 52px;
+    animation: petal3 infinite ease-in-out 4000ms;
 }
+/*petal 6*/
 .flower-petals .petal:nth-child(5){
-    background-color: mediumorchid;
+    background-color: orchid;
     height: 30px;
     border-radius: 31px 1px 29px 1px;
     transform: rotate(183deg);
@@ -59,7 +67,9 @@
     z-index: -2;
     top: 51px;
     right: 45px;
+    animation: petal6 infinite ease-in-out 7000ms;
 }
+/*petal 4*/
 .flower-petals .petal:nth-child(6){
     background-color: plum;
     height: 30px;
@@ -69,7 +79,9 @@
     z-index: -2;
     top: 47px;
     left: 28px;
+    animation: petal4 infinite ease-in-out 5000ms;
 }
+/*petal 5*/
 .flower-petals .petal:nth-child(7){
     background-color: mediumorchid;
     height: 30px;
@@ -79,6 +91,7 @@
     z-index: -2;
     top: 22px;
     right: 21px;
+    animation: petal5 infinite ease-in-out 6000ms;
 }
 .flower-corolla {
     width: 50px;
@@ -89,4 +102,61 @@
     left: 50%;
     transform: translate(-50%, -124%);
     position: relative;
+}
+
+@keyframes petal1 {
+    0%{
+        background-color: mediumorchid;
+    }
+    100%{
+        background-color: orchid;
+    }
+}
+@keyframes petal2 {
+    0%{
+        background-color: orchid;
+    }
+    100%{
+        background-color: violet;
+    }
+}
+@keyframes petal3 {
+    0%{
+        background-color: violet;
+    }
+    100%{
+        background-color: plum;
+    }
+}
+@keyframes petal4 {
+    0%{
+        background-color: plum;
+    }
+    100%{
+        background-color: mediumorchid;
+    }
+}
+@keyframes petal5 {
+    0%{
+        background-color: mediumorchid;
+    }
+    100%{
+        background-color: orchid;
+    }
+}
+@keyframes petal6 {
+    0%{
+        background-color: orchid;
+    }
+    100%{
+        background-color: violet;
+    }
+}
+@keyframes petal7 {
+    0%{
+        background-color: violet;
+    }
+    100%{
+        background-color: plum;
+    }
 }
